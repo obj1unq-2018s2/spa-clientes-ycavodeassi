@@ -10,19 +10,20 @@ En particular, vamos a estudiar algunos aspectos de Olivia, Bruno y Ramiro. De c
 
 ### Olivia
 Lo que nos interesa es conocer su grado de concentración, que es un número que arranca en 6, y varía de acuerdo a estos criterios:
-- cuando Olivia recibe masajes, su grado de concentración aumenta 3 puntos.
-- cuando discute, su grado de concentración baja un punto.
+- cuando Olivia _recibe masajes_, su grado de concentración aumenta 3 puntos.
+- cuando _discute_, su grado de concentración baja un punto.
+
 Tenemos que poder consultar `olivia.gradoDeConcentracion()`.
 
 
 ### Bruno
 De Bruno nos interesan tres cosas: si es feliz o no (digamos que "nace" feliz), si tiene sed (al principio no), y su peso (que arranca en 55 kilos, o sea 55000 gramos). Los eventos que nos interesan son estos:
-- recibir masajes es suficiente para que Bruno sea feliz.
-- cuando se da un baño de vapor, baja de peso 500 gramos y le da sed.
-- cuando toma agua se le va la sed.
-- cuando come fideos aumenta de peso 250 gramos, y le da sed.
-- cuando corre baja de peso 300 gramos.
-- cuando ve el noticiero, se le va la felicidad.
+- _recibir masajes_ es suficiente para que Bruno sea feliz.
+- cuando _se da un baño de vapor_, baja de peso 500 gramos y le da sed.
+- cuando _toma agua_ se le va la sed.
+- cuando _come fideos_ aumenta de peso 250 gramos, y le da sed.
+- cuando _corre_ baja de peso 300 gramos.
+- cuando _ve el noticiero_, se le va la felicidad.
 
 De Bruno también nos interesa 
 - saber si `estaPerfecto()`. Esto se cumple cuando: es feliz, no tiene sed, y está pesando entre 50 y 70 kilos; y
