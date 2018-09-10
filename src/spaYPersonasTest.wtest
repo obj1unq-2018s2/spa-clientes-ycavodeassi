@@ -1,0 +1,27 @@
+import spa.*
+import personas.*
+
+describe "Spa & Personas" {
+	test "El Spa" {
+		ramiro.bajarALaFosa()
+		ramiro.jugarAlPaddle()
+		spa.atender(ramiro)
+		assert.equals(1, ramiro.nivelDeContractura())
+		assert.notThat(ramiro.tienePielGrasosa())
+	}
+	
+	test "Atender a todo el mundo" {
+		spa.atender(olivia)
+		spa.atender(bruno)
+		assert.equals(3,olivia.gradoDeConcentracion())
+		assert.that(bruno.tieneSed())
+	}
+	
+	test "Premio al que vuelve enseguida" {
+		4.times({n => ramiro.jugarAlPaddle() })
+		spa.atender(ramiro)
+		spa.atender(ramiro)
+		assert.equals(3,ramiro.nivelDeContractura())
+	}
+		
+}
